@@ -4,34 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>calculator</title>
+    <title>Calculator</title>
 </head>
 <body>
-    <div class="calculator">
+    <div class="background-video">
+    <video autoplay muted loop id="bgVideo">
+        <source src="Portia_Ferg_sent_you_a_Snap_on_Snapchat_1-html5-T9iA8c1Fshare_id=oa_6qX4mQVKRQeLK_qSeFw_locale=en_US-1-0.mp4" type="video/mp4">
+        </video>
+    </div>
+        <div class="calculator">
         <input type="text" id="display" readonly />
-        <div class="button">
-        <div class="clear">
-            <h4>Portia's calculator</h4>
-            <button id="clear">C</button>
-        </div>
-            <button class="number">7</button>
+        <div class="buttons">
+            <div class="clear">
+                <button id="clear">C</button>
+            </div>
+            <button class="logo">7</button>
             <button class="number">8</button>
-            <button class="number">9</button>
-            <button id="operator">/</button>
+            <button class="sim1">9</button>
+            <button id="operator">+</button>
             <button class="number">4</button>
             <button class="number">5</button>
             <button class="number">6</button>
-            <button id="operator">*</button>
+            <button id="operator">-</button>
             <button class="number">1</button>
             <button class="number">2</button>
             <button class="number">3</button>
-            <button id="operator">+</button>
+            <button id="operator">*</button>
             <button class="number">0</button>
             <button class="number">.</button>
-            <button class="equal">=</button>
-            <button id="operator">-</button>
+            <button id="equals">=</button>
+            <button id="operator">/</button>
         </div>
+        <button id="playButton">Play Audio</button>
+        <button id="pauseButton">Pause</button>
     </div>
+    <audio id="audio" src="Katy Perry - Last Friday Night (Simlish) (320).mp3"></audio>
     <script src="index.js"></script>
 </body>
 </html>
